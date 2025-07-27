@@ -34,7 +34,7 @@ function App() {
       {/* Landing Page */}
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
-<div className="flex items-center justify-center mb-10 pb-4">
+<div className="flex items-center justify-center mb-10 pb-6">
   <span className="text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
     MyOpenPage.ai
   </span>
