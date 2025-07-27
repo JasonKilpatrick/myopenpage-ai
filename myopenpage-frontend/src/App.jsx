@@ -34,11 +34,11 @@ function App() {
       {/* Landing Page */}
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
-          <div className="flex items-center justify-center mb-6">
-            <span className="text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              MyOpenPage.ai
-            </span>
-          </div>
+<div className="flex items-center justify-center mb-10 pb-2">
+  <span className="text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent leading-tight">
+    MyOpenPage.ai
+  </span>
+</div>
           <p className="text-xl text-gray-600 mb-8">
             Your AI-Powered Dynamic Bio Page
           </p>
