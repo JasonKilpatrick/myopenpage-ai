@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Checkbox } from '@/components/ui/checkbox.jsx';
 import { Progress } from '@/components/ui/progress.jsx';
 import { Upload, ChevronLeft, ChevronRight, Sparkles, Heart, Activity, ArrowLeft } from 'lucide-react';
+import AIAssistant from './AIAssistant.jsx';
 
 // Updated for Vercel deployment - will use environment variable
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
@@ -433,6 +434,20 @@ const Questionnaire = ({ onComplete, onBack }) => {
           )}
         </div>
       </div>
+
+      {/* AI Assistant */}
+      <AIAssistant
+        currentQuestion={currentQuestion}
+        currentStep={currentStep + 1}
+        onSuggestion={(suggestion) => {
+          if (currentQuestion) {
+            setAnswers(prev => ({
+              ...prev,
+              [currentQuestion.id]: suggestion
+            }));
+          }
+        }}
+      />
     </div>
   );
 };
